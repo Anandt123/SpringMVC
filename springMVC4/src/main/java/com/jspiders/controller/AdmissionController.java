@@ -13,7 +13,6 @@ public class AdmissionController {
 	@RequestMapping(value="/admissionForm.html",method= RequestMethod.GET)	
 	public ModelAndView helloworld() {
 		
-		
 		ModelAndView mav=new ModelAndView("AdmissionForm");
 		
 		return mav;

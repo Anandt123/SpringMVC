@@ -1,9 +1,8 @@
-
 <html>
 
 <body>
 <h1>STUDENT ADMISSION FORM ENGINEER COURSES</h1>
-<form action="/AdmissionProject2/submitAdmissionForm.html" method="post">
+<form action="submitAdmissionForm.html" method="post">
 <p> 
 Student Name : <input type="text" name="name"/>
 </p>

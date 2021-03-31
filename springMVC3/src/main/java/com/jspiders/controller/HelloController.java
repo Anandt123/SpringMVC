@@ -16,14 +16,17 @@ public class HelloController
 		return modelandview;
 	}
 	@RequestMapping(value="/submitAdmissionForm.html",method=RequestMethod.POST)
-	public ModelAndView submitAdmissionForm(@RequestParam("studentName")String name,@RequestParam("studentHobby")String hobby)
+	public ModelAndView submitAdmissionForm(@RequestParam("studentName")String name,@RequestParam("studentMobile")long mobile,@RequestParam("studentHobby")String hobby,@RequestParam("studentAge")int age,@RequestParam("studentDob")String dob)
 	{
 		Student s1= new Student();
 		s1.setName(name);
+		s1.setMobile(mobile);
 		s1.setHobby(hobby);
+		s1.setAge(age);
+		s1.setDob(dob);
 		ModelAndView modelandview = new ModelAndView("AdmissionSuccess");
 		modelandview.addObject(s1);
-		modelandview.addObject("msg", "Details submitted by you :: Name "+name +", Hobby : "+hobby);
+		modelandview.addObject("msg", "Details submitted by you :: Name : "+name +", Mobile : "+mobile+", Hobby : "+hobby+", Age : "+age+", Dob : "+dob);
 		return modelandview;
 	}
 }
