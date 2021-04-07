@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>first spring MVC applicationDemo</h1>
+<h1>Data is SuccessFully Printing....</h1>
 <%-- <h2>${welcomeMessage}</h2> --%>
 <h2>${msg}</h2>
 </body>
